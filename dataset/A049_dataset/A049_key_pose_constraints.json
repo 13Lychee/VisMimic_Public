@@ -1,0 +1,360 @@
+{
+    "name": "sumo squat",
+    "assessment": [
+        {
+            "id": "0",
+            "description": "start to prepare",
+            "frame": 0,
+            "constraints": []
+        },
+        {
+            "id": "1",
+            "description": "preparation ready, start to squat",
+            "frame": 61,
+            "constraints": [
+                {
+                    "id": "0",
+                    "type": "angle",
+                    "description": "head up", //头-颈-颈z轴夹角
+                    "joints": [
+                        {
+                            "joint_1": {
+                                "name": "head", //节点名称，与keypoints对应
+                                "property": "a" //a表示整个节点，x为这个节点x轴，y为y轴，z为z轴
+                            }
+                        },
+                        {
+                            "joint_2": {
+                                "name": "neck",
+                                "property": "a"
+                            }
+                        },
+                        {
+                            "joint_3": {
+                                "name": "neck",
+                                "property": "z"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "1",
+                    "type": "distance",
+                    "description": "foot wide",
+                    "joints": [
+                        {
+                            "joint_1": {
+                                "name": "left_ankle",
+                                "property": "a"
+                            }
+                        },
+                        {
+                            "joint_2": {
+                                "name": "right_ankle",
+                                "property": "a"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "2",
+                    "type": "angle",
+                    "description": "spine up",
+                    "joints": [
+                        {
+                            "joint_1": {
+                                "name": "neck",
+                                "property": "a"
+                            }
+                        },
+                        {
+                            "joint_2": {
+                                "name": "hip",
+                                "property": "a"
+                            }
+                        },
+                        {
+                            "joint_3": {
+                                "name": "hip",
+                                "property": "z"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "3",
+                    "type": "angle",
+                    "description": "knee open",
+                    "joints": [
+                        {
+                            "joint_1": {
+                                "name": "left_knee",
+                                "property": "a"
+                            }
+                        },
+                        {
+                            "joint_2": {
+                                "name": "hip",
+                                "property": "a"
+                            }
+                        },
+                        {
+                            "joint_3": {
+                                "name": "right_knee",
+                                "property": "a"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "description": "squat down to the lowest point",
+            "frame": 90,
+            "constraints": [
+                {
+                    "id": "0",
+                    "type": "angle",
+                    "description": "head up", //头-颈-颈z轴夹角
+                    "joints": [
+                        {
+                            "joint_1": {
+                                "name": "head", //节点名称，与keypoints对应
+                                "property": "a" //a表示整个节点，x为这个节点x轴，y为y轴，z为z轴
+                            }
+                        },
+                        {
+                            "joint_2": {
+                                "name": "neck",
+                                "property": "a"
+                            }
+                        },
+                        {
+                            "joint_3": {
+                                "name": "neck",
+                                "property": "z"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "1",
+                    "type": "angle",
+                    "description": "spine up",
+                    "joints": [
+                        {
+                            "joint_1": {
+                                "name": "neck",
+                                "property": "a"
+                            }
+                        },
+                        {
+                            "joint_2": {
+                                "name": "hip",
+                                "property": "a"
+                            }
+                        },
+                        {
+                            "joint_3": {
+                                "name": "hip",
+                                "property": "z"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "2",
+                    "type": "distance",
+                    "description": "knee wide",
+                    "joints": [
+                        {
+                            "joint_1": {
+                                "name": "left_knee",
+                                "property": "a"
+                            }
+                        },
+                        {
+                            "joint_2": {
+                                "name": "right_knee",
+                                "property": "a"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "3",
+                    "type": "distance",
+                    "description": "squat deep",
+                    "joints": [
+                        {
+                            "joint_1": {
+                                "name": "hip",
+                                "property": "a"
+                            }
+                        },
+                        {
+                            "joint_2": {
+                                "name": "ground", //特殊节点，单独处理
+                                "property": ""
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "4",
+                    "type": "distance",
+                    "description": "left knee outer than left ankle",
+                    "joints": [
+                        {
+                            "joint_1": {
+                                "name": "left_knee",
+                                "property": "x"
+                            }
+                        },
+                        {
+                            "joint_1": {
+                                "name": "left_ankle",
+                                "property": "x"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "5",
+                    "type": "distance",
+                    "description": "right knee outer than right ankle",
+                    "joints": [
+                        {
+                            "joint_1": {
+                                "name": "right_knee",
+                                "property": "x"
+                            }
+                        },
+                        {
+                            "joint_1": {
+                                "name": "right_ankle",
+                                "property": "x"
+                            }
+                        }
+                    ]
+                }
+
+            ]
+        },
+        {
+            "id": "3",
+            "description": "squat down to stand up",
+            "frame": 122,
+            "constraints": [
+                {
+                    "id": "0",
+                    "type": "angle",
+                    "description": "spine up",
+                    "joints": [
+                        {
+                            "joint_1": {
+                                "name": "neck",
+                                "property": "a"
+                            }
+                        },
+                        {
+                            "joint_2": {
+                                "name": "hip",
+                                "property": "a"
+                            }
+                        },
+                        {
+                            "joint_3": {
+                                "name": "hip",
+                                "property": "z"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "1",
+                    "type": "angle",
+                    "description": "left knee up", //左膝关节角度
+                    "joints": [
+                        {
+                            "joint_1": {
+                                "name": "hip",
+                                "property": "a"
+                            }
+                        },
+                        {
+                            "joint_2": {
+                                "name": "left_knee",
+                                "property": "a"
+                            }
+                        },
+                        {
+                            "joint_3": {
+                                "name": "left_ankle",
+                                "property": "a"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "2",
+                    "type": "angle",
+                    "description": "right knee up", //右膝关节角度
+                    "joints": [
+                        {
+                            "joint_1": {
+                                "name": "hip",
+                                "property": "a"
+                            }
+                        },
+                        {
+                            "joint_2": {
+                                "name": "right_knee",
+                                "property": "a"
+                            }
+                        },
+                        {
+                            "joint_3": {
+                                "name": "right_ankle",
+                                "property": "a"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "3",
+                    "type": "trajectory",
+                    "description": "hip trajectory",
+                    "joints": [
+                        {
+                            "joint_1": {
+                                "name": "hip",
+                                "property": "a"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "4",
+                    "type": "distance",
+                    "description": "hip and spine up together",
+                    "joints": [
+                        {
+                            "joint_1": {
+                                "name": "hip",
+                                "property": "z"
+                            }
+                        },
+                        {
+                            "joint_1": {
+                                "name": "neck",
+                                "property": "z"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

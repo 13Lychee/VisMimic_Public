@@ -1,0 +1,61 @@
+{
+    "id": "A049",
+    "name": "sumo squat",
+    "key_attribute": [
+        {
+            "id": "0",
+            "description": "hip height",
+            "type": "distance",
+            "joints": [
+                {
+                    "joint_1": {
+                        "name": "hip",
+                        "property": "a"
+                    },
+                    "joint_2": {
+                        "name": "ground",
+                        "property": "a"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "1",
+            "description": "feet distance",
+            "type": "distance",
+            "joints": [
+                {
+                    "joint_1": {
+                        "name": "left-ankle",
+                        "property": "a"
+                    },
+                    "joint_2": {
+                        "name": "right-ankle",
+                        "property": "a"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "description": "knee angle",
+            "type": "angle",
+            "joints": [
+                {
+                    "joint_1": {
+                        "name": "left-ankle",
+                        "property": "a"
+                    },
+                    "joint_2": {
+                        "name": "right-knee",
+                        "property": "a"
+                    },
+                    "joint_3": {
+                        "name": "hip",
+                        "property": "a"
+                    }
+                }
+            ]
+        }
+    ]
+}
