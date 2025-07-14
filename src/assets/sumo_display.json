@@ -1,0 +1,72 @@
+{
+    "name": "sumo squat",
+    "display": [
+        {
+            "id": "0",
+            "text": "Hip Height",
+            "type": "distance",
+            "joints": [
+                                {
+                                    "joint_1": {
+                                        "name": "hip",
+                                        "property": "a"
+                                    }
+                                },
+                                {
+                                    "joint_2": {
+                                        "name": "ground",
+                                        "property": ""
+                                    }
+                                }
+                            ]
+            
+        },
+        {
+            "id": "1",
+            "text": "Knee Angle",
+            "type": "angle",
+            "joints": [
+                                {
+                                    "joint_1": {
+                                        "name": "hip",
+                                        "property": "a"
+                                    }
+                                },
+                                {
+                                    "joint_2": {
+                                        "name": "left_knee",
+                                        "property": "a"
+                                    }
+                                },
+                                {
+                                    "joint_3": {
+                                        "name": "left_ankle",
+                                        "property": "a"
+                                    }
+                                }
+                            ]
+            
+        },
+        {
+            "id": "2",
+            "text": "Feet Distance",
+            "type": "distance",
+            "joints": [
+                                {
+                                    "joint_1": {
+                                        "name": "left_ankle",
+                                        "property": "a"
+                                    }
+                                },
+                                {
+                                    "joint_2": {
+                                        "name": "right_ankle",
+                                        "property": "a"
+                                    }
+                                }
+                            ]
+            
+        }
+    ]
+}
+        

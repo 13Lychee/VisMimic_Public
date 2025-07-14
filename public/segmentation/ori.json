@@ -1,0 +1,23 @@
+{
+    "name": "ref",
+    "video":"",
+    "segmentation": [
+        {
+            "id": "0",
+            "frame": 0
+        },
+        {
+            "id": "1",
+            "frame": 97
+        },
+        {
+            "id": "2",
+            "frame": 134
+        },
+        {
+            "id": "3",
+            "frame": 165
+        }
+    ]
+}
+        

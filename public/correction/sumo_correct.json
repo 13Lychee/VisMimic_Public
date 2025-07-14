@@ -1,0 +1,333 @@
+{
+    "name": "sumo squat",
+    "correction": [
+        {
+            "id": "0", 
+            "dataset": "sumo squat",
+            "frame": 0,
+            "feedbacks": []
+        },
+        {
+            "id": "1", 
+            "dataset": "stand about twice shoulder-width apart, with your toes facing diagonally forward.",
+            "frame": 97,
+            "feedbacks": [
+                {
+                    "id": "0",
+                    "body_part": [ 
+                        "right_ankle", 
+                        "left_ankle"  
+                    ],
+                    "text": "Stand with your feet wide apart.",
+                    "img": "/correction/01/1.png",
+                    "relative_constraints": [ 
+                        {
+                            "id": "0",
+                            "type": "distance",
+                            "description": "foot wide",
+                            "joints": [
+                                {
+                                    "joint_1": {
+                                        "name": "left_ankle",
+                                        "property": "a"
+                                    }
+                                },
+                                {
+                                    "joint_2": {
+                                        "name": "right_ankle",
+                                        "property": "a"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "1",
+                            "type": "angle",
+                            "description": "knee open",
+                            "joints": [
+                                {
+                                    "joint_1": {
+                                        "name": "left_knee",
+                                        "property": "a"
+                                    }
+                                },
+                                {
+                                    "joint_2": {
+                                        "name": "hip",
+                                        "property": "a"
+                                    }
+                                },
+                                {
+                                    "joint_3": {
+                                        "name": "right_knee",
+                                        "property": "a"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "1",
+                    "body_part": [
+                        "right_ankle",
+                        "left_ankle"
+                    ],
+                    "text": "Stand with your toes pointing outward.",
+                    "img": "/correction/01/2.png",
+                    "relative_constraints": [
+                        {
+                            "id": "0",
+                            "type": "angle",
+                            "description": "knee open",
+                            "joints": [
+                                {
+                                    "joint_1": {
+                                        "name": "left_knee",
+                                        "property": "a"
+                                    }
+                                },
+                                {
+                                    "joint_2": {
+                                        "name": "hip",
+                                        "property": "a"
+                                    }
+                                },
+                                {
+                                    "joint_3": {
+                                        "name": "right_knee",
+                                        "property": "a"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "dataset": "when squatting to the thighs parallel to the ground, keep your knees in the same direction as your toes.",
+            "frame": 134,
+            "feedbacks": [
+                {
+                    "id": "0",
+                    "body_part": [
+                        "neck"
+                    ],
+                    "text": "Keep your head up and look straight ahead.",
+                    "img": "/correction/02/1.png",
+                    "relative_constraints": [
+                        {
+                            "id": "0",
+                            "type": "angle",
+                            "description": "head up",
+                            "joints": [
+                                {
+                                    "joint_1": {
+                                        "name": "head",
+                                        "property": "a"
+                                    }
+                                },
+                                {
+                                    "joint_2": {
+                                        "name": "neck",
+                                        "property": "a"
+                                    }
+                                },
+                                {
+                                    "joint_3": {
+                                        "name": "neck",
+                                        "property": "z"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "1",
+                    "body_part": [
+                        "right_knee",
+                        "left_knee"
+                    ],
+                    "text": "Keep your knees facing outward and avoid turning them inward.",
+                    "img": "/correction/02/2.png",
+                    "relative_constraints": [
+                        {
+                            "id": "0",
+                            "type": "distance",
+                            "description": "knee wide",
+                            "joints": [
+                                {
+                                    "joint_1": {
+                                        "name": "left_knee",
+                                        "property": "a"
+                                    }
+                                },
+                                {
+                                    "joint_2": {
+                                        "name": "right_knee",
+                                        "property": "a"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "1",
+                            "type": "distance",
+                            "description": "left knee outer than left ankle",
+                            "joints": [
+                                {
+                                    "joint_1": {
+                                        "name": "left_knee",
+                                        "property": "x"
+                                    }
+                                },
+                                {
+                                    "joint_1": {
+                                        "name": "left_ankle",
+                                        "property": "x"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "2",
+                            "type": "distance",
+                            "description": "right knee outer than right ankle",
+                            "joints": [
+                                {
+                                    "joint_1": {
+                                        "name": "right_knee",
+                                        "property": "x"
+                                    }
+                                },
+                                {
+                                    "joint_1": {
+                                        "name": "right_ankle",
+                                        "property": "x"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "3",
+                    "body_part": [
+                        "hip"
+                    ],
+                    "text": "Squat deeper until your thighs are parallel to the ground.",
+                    "img": "/correction/02/3.png",
+                    "relative_constraints": [
+                        {
+                            "id": "0",
+                            "type": "distance",
+                            "description": "squat deep",
+                            "joints": [
+                                {
+                                    "joint_1": {
+                                        "name": "hip",
+                                        "property": "a"
+                                    }
+                                },
+                                {
+                                    "joint_2": {
+                                        "name": "ground",
+                                        "property": ""
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "dataset": "keep your upper body as straight as possible. cross your arms over your chest.",
+            "frame": 165,
+            "feedbacks": [
+                {
+                    "id": "0",
+                    "body_part": [
+                        "neck",
+                        "hip"
+                    ],
+                    "text": "Keep your spine straight.",
+                    "img": "/correction/03/1.png",
+                    "relative_constraints": [
+                        {
+                            "id": "0",
+                            "type": "angle",
+                            "description": "spine up",
+                            "joints": [
+                                {
+                                    "joint_1": {
+                                        "name": "neck",
+                                        "property": "a"
+                                    }
+                                },
+                                {
+                                    "joint_2": {
+                                        "name": "hip",
+                                        "property": "a"
+                                    }
+                                },
+                                {
+                                    "joint_3": {
+                                        "name": "hip",
+                                        "property": "z"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "1",
+                    "body_part": [
+                        "hip"
+                    ],
+                    "text": "Lift the hips and spine together while standing up.",
+                    "img": "/correction/03/2.png",
+                    "relative_constraints": [
+                        {
+                            "id": "0",
+                            "type": "trajectory",
+                            "description": "hip trajectory",
+                            "joints": [
+                                {
+                                    "joint_1": {
+                                        "name": "hip",
+                                        "property": "a"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "1",
+                            "type": "distance",
+                            "description": "hip and spine up together",
+                            "joints": [
+                                {
+                                    "joint_1": {
+                                        "name": "hip",
+                                        "property": "z"
+                                    }
+                                },
+                                {
+                                    "joint_1": {
+                                        "name": "neck",
+                                        "property": "z"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
