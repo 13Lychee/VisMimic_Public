@@ -19,6 +19,7 @@ This limitation hinders feedback comprehension in motor learning, making it diff
 
 ## TODO List
 
+- [√] Release example dataset
 - [√] Release Front-end code
 - [x] Release Back-end code
 
